@@ -35,3 +35,5 @@ pbi = st.expander("Power BI")
 pbi.container(border=True)
 
 # Próximo passo: Organizar os conteúdos por abas, add sidebar, criar páginas extras para cada conteúdo.
+
+# teste pra saber do commit
