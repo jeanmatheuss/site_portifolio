@@ -3,14 +3,19 @@ import pandas as pd
 import datetime
 
 #@st.cache_data(ttl="1day")
-page_sql = st.Page("pages/sql.py", title="SQL")
-page_python = st.Page("pages/python.py", title="Python")
-page_pbi = st.Page("pages/pbi.py", title="Power BI")
+# page_sql = st.Page("pages/sql.py", title="SQL")
+# page_python = st.Page("pages/python.py", title="Python")
+# page_pbi = st.Page("pages/pbi.py", title="Power BI")
 
 
 
-pg = st.navigation([page_sql, page_python, page_pbi])
+# pg = st.navigation([page_sql, page_python, page_pbi])
 st.set_page_config(page_title="Portifólio", page_icon="📚")
+
+st.sidebar.title("Navegação")
+pagina = st.sidebar.radio("Projetos em:", ["SQL", "Python", "Power BI"])
+
+
 
 
 st.markdown(
